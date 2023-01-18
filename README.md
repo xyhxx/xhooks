@@ -17,3 +17,8 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 - ['useLatest'](./docs/useLatest.md)
 
 `keep data values ​​always up to date`
+
+- ['useSetState'](./docs/useSetState.md)
+
+`update state like this.setState`
+
