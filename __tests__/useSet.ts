@@ -3,10 +3,9 @@ import {useSet} from '@src';
 
 function setup<V>(initState: Iterable<V>) {
   return renderHook(
-    function(init) {
-      return useSet(init);
+    function() {
+      return useSet(initState);
     },
-    {initialProps: initState},
   );
 }
 

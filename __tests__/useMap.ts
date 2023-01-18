@@ -3,10 +3,9 @@ import {useMap} from '@src';
 
 function setup<K, V>(initState: Iterable<[K, V]>) {
   return renderHook(
-    function(init) {
-      return useMap(init);
+    function() {
+      return useMap(initState);
     },
-    {initialProps: initState},
   );
 }
 
