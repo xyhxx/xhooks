@@ -23,18 +23,18 @@ export function useRequestAnimationFrame(fn: (timestamp: number) => void, auto =
     [isActive, callback],
   );
 
-  const pause = useCallback(
+  const pause = useCallback<() => void>(
     function() {
       setActive(false);
     },
-    [],
+  [],
   );
 
-  const start = useCallback(
+  const start = useCallback<() => void>(
     function() {
       setActive(true);
     },
-    [],
+  [],
   );
 
   useLayoutEffect(
