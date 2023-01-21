@@ -35,3 +35,9 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 - ['useRequestAnimationFrame'](./docs/useRequestAnimationFrame.md)
 
 `requestAnimationFrame hook`
+
+## Animate
+
+- ['useTransition'](./docs/useTransition.md)
+
+`switch between tow values with the easing function`
