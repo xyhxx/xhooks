@@ -4,3 +4,4 @@ export * from './useMap';
 export * from './useSet';
 export * from './useRequestAnimationFrame';
 export * from './useTransition';
+export * from './useBoolean';

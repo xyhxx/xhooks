@@ -30,6 +30,10 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 
 `Set hook`
 
+- ['useBoolean'](./docs/useBoolean.md)
+
+`manage state of boolean`
+
 ## WEB
 
 - ['useRequestAnimationFrame'](./docs/useRequestAnimationFrame.md)
