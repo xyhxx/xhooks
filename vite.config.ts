@@ -33,10 +33,11 @@ export default defineConfig(function({mode}) {
         fileName: format => `index.${format}.js`,
       },
       rollupOptions: {
-        external: ['react'],
+        external: ['react', 'dayjs'],
         output: {
           globals: {
             react: 'react',
+            dayjs: 'dayjs',
           },
         },
       },
