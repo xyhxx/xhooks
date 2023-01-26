@@ -9,3 +9,4 @@ export * from './useCountDown';
 export * from './useAsyncLock';
 export * from './useBroadcastChannel';
 export * from './useClipboard';
+export * from './useEventEmitter';

@@ -63,3 +63,7 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 - ['useAsyncLock'](./docs/useAsyncLock.md)
 
 `Asynchronous function lock. When the asynchronous function is executed, it will not be executed again, and an undefind will be returned.`
+
+- ['useEventEmitter'](./docs/useEventEmitter.md)
+
+`Publish subscribe hook.`
