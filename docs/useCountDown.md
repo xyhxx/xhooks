@@ -11,7 +11,13 @@ type UseCountDownOptions = {
     minutes?: number;
     seconds?: number;
     interval?: number;
-    onChange?: (time: number, parseTime: ReturnType<typeof parseDiffTime>) => void;
+    onChange?: (time: number, parseTime: {
+      days: number;
+      hours: number;
+      minutes: number;
+      seconds: number;
+      milliseconds: number;
+    }) => void;
     onComplete?: () => void;
 };
 function useCountDown(options?: UseCountDownOptions): {
