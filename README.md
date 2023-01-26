@@ -44,6 +44,10 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 
 `requestAnimationFrame hook`
 
+- ['useBroadcastChannel'](./docs/useBroadcastChannel.md)
+
+`BroadcastChannel hook`
+
 ## Animate
 
 - ['useTransition'](./docs/useTransition.md)
