@@ -6,3 +6,4 @@ export * from './useRequestAnimationFrame';
 export * from './useTransition';
 export * from './useBoolean';
 export * from './useCountDown';
+export * from './useAsyncLock';

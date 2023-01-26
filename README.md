@@ -49,3 +49,9 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 - ['useTransition'](./docs/useTransition.md)
 
 `switch between tow values with the easing function`
+
+## Utils
+
+- ['useAsyncLock'](./docs/useAsyncLock.md)
+
+`Asynchronous function lock. When the asynchronous function is executed, it will not be executed again, and an undefind will be returned.`
