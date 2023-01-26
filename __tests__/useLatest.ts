@@ -1,9 +1,10 @@
 import {renderHook} from '@testing-library/react';
 import {useLatest} from '@src';
+import {MutableRefObject} from 'react';
 
 function setup<T>(initState: T) {
-  return renderHook(
-    state => useLatest(state),
+  return renderHook<MutableRefObject<T>, T>(
+    state => useLatest<T>(state),
     {initialProps: initState},
   );
 }
