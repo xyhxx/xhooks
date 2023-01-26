@@ -9,9 +9,7 @@
   },
   "homepage": "https://github.com/xyhxx/xhooks#readme",
   "scripts": {
-    "build:umd": "vite build --mode umd",
-    "build:es": "vite build --mode es",
-    "build": "pnpm build:umd && pnpm build:es",
+    "build": "vite build --mode es",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -20,14 +18,7 @@
     "lib",
     "types"
   ],
-  "main": "./lib/index.umd.js",
-  "module": "./lib/index.es.js",
-  "exports": {
-    ".": {
-      "import": "./lib/index.es.js",
-      "require": "./lib/index.umd.js"
-    }
-  },
+  "main": "./lib/index.js",
   "types": "./types/index.d.ts",
   "keywords": [
     "react",

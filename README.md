@@ -48,6 +48,10 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 
 `BroadcastChannel hook`
 
+- ['useClipboard'](./docs/useClipboard.md)
+
+`Clipboard hook`
+
 ## Animate
 
 - ['useTransition'](./docs/useTransition.md)

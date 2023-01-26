@@ -1,21 +1,15 @@
-import {defineConfig, Plugin} from 'vite';
+import {defineConfig} from 'vite';
 import {resolve} from 'path';
 import dts from 'vite-plugin-dts';
 
-export default defineConfig(function({mode}) {
-  const m = mode as 'es' | 'umd';
-  const plugins: Plugin[] = [];
-
-  m === 'es'
-    && plugins.push(
+export default defineConfig(function() {
+  return {
+    plugins: [
       dts({
         exclude: ['node_modules/**', 'list/**', '__tests__/**', 'docs/**'],
         outputDir: 'types',
       }),
-    );
-
-  return {
-    plugins,
+    ],
     publicDir: false,
     resolve: {
       alias: {
@@ -23,14 +17,15 @@ export default defineConfig(function({mode}) {
       },
     },
     build: {
-      emptyOutDir: m === 'umd',
+      emptyOutDir: true,
       target: 'esnext',
       outDir: 'lib',
+      minify: false,
       lib: {
         entry: './src/index.ts',
-        formats: [m],
+        formats: ['es'],
         name: 'xhooks',
-        fileName: format => `index.${format}.js`,
+        fileName: () => 'index.js',
       },
       rollupOptions: {
         external: ['react', 'dayjs'],
