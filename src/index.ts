@@ -10,3 +10,5 @@ export * from './useAsyncLock';
 export * from './useBroadcastChannel';
 export * from './useClipboard';
 export * from './useEventEmitter';
+export * from './useIntersectionObserver';
+export * from './useIntersectionObserverState';

@@ -67,3 +67,7 @@ The simple and easy-to-use hook combination makes it convenient for you to quick
 - ['useEventEmitter'](./docs/useEventEmitter.md)
 
 `Publish subscribe hook.`
+
+- ['useIntersectionObserver'](./docs/useIntersectionObserver.md), ['useIntersectionObserverState'](./docs/useIntersectionObserverState.md)
+
+`Create an API for IntersectionObserver. The difference between useIntersectionObserver and useIntersectionObserver state is that useIntersectionObserver obtains information through callback, and useIntersectionObserver state will return the callback content as state. Both can interrupt listening and resume listening.`
